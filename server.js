@@ -8,7 +8,7 @@ const MOVIES = require('./movie-data.json')
 const app = express()
 
 const morganSetting = process.env.NODE_ENV === 'production' ? 'tiny' : 'common'
-Fapp.use(morgan(morganSetting))
+app.use(morgan(morganSetting))
 app.use(helmet())
 app.use(cors())
 
